@@ -10,8 +10,8 @@ COIN_TGZ='https://github.com/GregMcwolf/celixinstall/files/2407115/celix.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='celix'
 COIN_EXPLORER='https://explorer.celix.live/'
-COIN_PORT=29711
-RPC_PORT=29712
+COIN_PORT=9777
+RPC_PORT=7574
 
 NODEIP=$(curl -s4 icanhazip.com)
 
