@@ -20,7 +20,7 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 function compile_node() {
-  echo -e "Prepare to launch $COIN_NAME"
+  echo -e "Get Ready! Im Prepare your coin $COIN_NAME"
   wget https://github.com/GregMcwolf/celixinstall/files/2407115/celix.zip
   unzip celix.zip
   chmod +x celix/*
@@ -88,7 +88,7 @@ EOF
 
 
 function create_key() {
-  echo -e "Enter your ${RED}$COIN_NAME Masternode Private Key${NC}. Leave it blank to generate a new ${RED}Masternode Private Key${NC} for you:"
+  echo -e "Paste Your  ${RED}$COIN_NAME Masternode Private Key${NC}. Leave it blank to generate a new ${RED}Masternode Private Key${NC} for you:"
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
   $COIN_DAEMON -daemon
