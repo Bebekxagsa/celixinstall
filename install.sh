@@ -24,7 +24,7 @@ function compile_node() {
   wget https://github.com/GregMcwolf/celixinstall/files/2407115/celix.zip
   unzip celix.zip
   chmod +x celix/*
-  cd daemon
+  cd celix
   sudo cp celixd celix-cli /usr/local/bin
   chmod +x /usr/local/bin/*
   cd -
